@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <%= render :partial => "/shared/head", :locals => {:theme => true} %>
+  <body>
+    <%= render :partial => "/shared/site_bar" %>
+    <div id='page_container'>
+      <div id='page'>
+        <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+        <div id='header'>
+          <%= render :partial => "/shared/header" %>
+        </div>
+        <% if @left_menu %>
+        <div id='bodymenu'>
+		  <br />
+		  <nav id='left_menu' class='menu clearfix'>
+	      <ul>
+	      <%= @left_menu -%>
+	      </ul>
+	      </nav>
+	    </div>
+	    <% end %>
+        <div id='body' class='clearfix'>
+          <%= yield %>
+        </div>
+        <div id='footer'>
+          <%= render :partial => "/shared/footer" %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+it:
+    plugins:
+        portfolio:
+            title: Portfolio
+        refinerycms_map:
+            title: Mappe
+    admin:
+        map_locations:
+            index:
+                no_items_yet: Non ci sono ancora Mappe. Clicca "Crea nuova mappa" per aggiungere la tua prima.
+                create: Crea Una Nuova Mappa
+            map_location:
+                delete: Rimuovi questa mappa per sempre
+                edit: Modifica questa mappa
+                view_live: Visualzza questa mappa live <br/><em>(si apre in una nuova finestra)</em>
+        portfolio:
+            index:
+                no_portfolio_entries_yet: Non ci sono ancora Portfoli di immagini definiti. Clicca "Crea nuovo portfolio" per aggiungere il tuo primo album.
+                create_new_portfolio_entry: Crea Una Nuovo Portfolio
+            list:
+                confirm_delete_entry_title: Rimuovi questa galleria per sempre
+                edit_this_entry: Modifica questa galleria
+                view_live: Visualzza questa galleria live <br/><em>(si apre in una nuova finestra)</em>
+            form:
+                title: Titolo
+                content: Contenuti
+                images: Immagini
+                add_another_image: Aggiungi una nuova immagine

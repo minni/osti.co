@@ -1,0 +1,158 @@
+@import url('/stylesheets/refinery/application.css');
+/*
+    Override default refinery application CSS below.
+    Formatting applies to all frontend.
+*/
+body {
+  /*background: #DDD;*/
+  font-family: Verdana;
+  font-size: 13px;
+  line-height: 18px;
+
+  background-color: #41403C;
+}
+
+#page, #site_bar_content, #footer, #header {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+#header {
+  margin-top: 22px;
+}
+
+#header h1 {
+  background-color: #357;
+  color: white;
+  margin: 25px 0px;
+  padding: 25px; 
+
+  border-top-left-radius: 15px 15px;
+  border-top-right-radius: 15px 15px;
+  border-bottom-left-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+}
+
+#header a, #header a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+#footer {
+  color: white;
+  padding: 25px; 
+  padding-left: 0px; 
+}
+
+#bodymenu {
+  float: left;
+  background: white;
+  width: 10%;
+  height: 80%;
+
+  border-bottom-right-radius: 15px 15px;
+}
+
+#body {
+  background: white;
+  color: #333;
+  padding: 20px;
+
+  border-top-right-radius: 15px 15px;
+  border-bottom-left-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+}
+
+#body_content, #side_body_content {
+  margin-left: 10px;
+  float: left;
+  background: white;
+  color: #333;
+  padding: 20px;
+}
+
+#body_content_left {
+  float: left;
+  width: 490px;
+  padding-right: 10px;
+}
+#body_content_right {
+  float: right;
+  padding-left: 10px;
+  width: 290px;
+}
+#body_content.no_body_content_left #body_content_right,
+  #body_content.no_body_content_right #body_content_left {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#menu ul li {
+  float: left;
+  margin-right: 2px;
+  
+  list-style-type: none;
+  list-style-position: initial;
+  list-style-image: initial;
+}
+
+#menu ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+
+  background: transparent url('/images/refinery/nav_inactive_background.png') repeat;
+  color: white;
+  
+  border-top-left-radius:  5px 5px;
+  border-top-right-radius: 5px 5px;
+}
+
+#menu ul li.selected a, #menu ul li a:hover {
+  /*background: #CCC;*/
+  
+  background-color: white;
+  color: #F50;
+}
+
+#left_menu ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#left_menu ul li {
+  /*float: left;*/
+  margin-bottom: 2px;
+  
+  list-style-type: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  border-top-left-radius: 5px 5px;
+  border-top-right-radius: 5px 5px;
+}
+
+#left_menu ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+
+  background-color: white;
+  color: #F50;
+  width: 100%;
+}
+
+#left_menu ul li.selected a, #left_menu ul li a:hover {
+  background: #41403C url('/images/refinery/nav_inactive_background.png') repeat;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+
+  border-top-right-radius: 5px 5px;
+  border-bottom-right-radius:  5px 5px;
+}
