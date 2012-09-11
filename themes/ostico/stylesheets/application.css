@@ -156,3 +156,13 @@ body {
   border-top-right-radius: 5px 5px;
   border-bottom-right-radius:  5px 5px;
 }
+
+#blog_post header {
+  width: 490px;
+  line-height: 190%;
+}
+
+.blog_post header {
+  width: 490px;
+  line-height: 190%;
+}

@@ -11,7 +11,7 @@ RefinerySetting.all.each do |s|
   puts result
 end; nil
 =end
-class CreateOsticoDefaults < ActiveRecord::Migration
+class CreateMinniDefaults < ActiveRecord::Migration
   def self.up
     r = RefinerySetting.find_or_create_by_name 'dragonfly_secret'
     r.update_attributes :value => YAML.load("--- 02c9c1c726a2539ec73a0bfb1a837eecb51f644ea80e4d10\n"), :destroyable => 'true', :form_value_type => 'text_area'

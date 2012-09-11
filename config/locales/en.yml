@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+en:
+  blog:
+    posts:
+      post:
+        filed_in: "Filed in"
